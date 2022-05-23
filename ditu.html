@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+  <script src="js/world.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row resourse pb-60">
+    <div class="pt-60 juzhong ">
+      <div id="main" style="width: 1200px; height: 600px; border: 0px solid rgb(204, 204, 204); -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: rgb(34, 34, 34);" _echarts_instance_="ec_1638203386811"><div style="position: relative; overflow: hidden; width: 1200px; height: 600px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas width="1619" height="809" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 1200px; height: 600px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 608px; top: 261px;">国家： Ukraine<br>国家(cn)： 乌克兰<br>童婚率(%):   9.1<br></div></div>
+      <script>
+        var latlong = {};
+        latlong['AD'] = {'latitude':42.5, 'longitude':1.5};
+        latlong['AE'] = {'latitude':24, 'longitude':54};
+        latlong['AF'] = {'latitude':33, 'longitude':65};
+        latlong['AG'] = {'latitude':17.05, 'longitude':-61.8};
+        latlong['AI'] = {'latitude':18.25, 'longitude':-63.1667};
+        latlong['AL'] = {'latitude':41, 'longitude':20};
+        latlong['AM'] = {'latitude':40, 'longitude':45};
+        latlong['AN'] = {'latitude':12.25, 'longitude':-68.75};
+        latlong['AO'] = {'latitude':-12.5, 'longitude':18.5};
+        latlong['AP'] = {'latitude':35, 'longitude':105};
+        latlong['AQ'] = {'latitude':-90, 'longitude':0};
+        latlong['AR'] = {'latitude':-34, 'longitude':-64};
+        latlong['AS'] = {'latitude':-14.3333, 'longitude':-170};
+        latlong['AT'] = {'latitude':47.3333, 'longitude':13.3333};
+        latlong['AU'] = {'latitude':-27, 'longitude':133};
+        latlong['AW'] = {'latitude':12.5, 'longitude':-69.9667};
+        latlong['AZ'] = {'latitude':40.5, 'longitude':47.5};
+        latlong['BA'] = {'latitude':44, 'longitude':18};
+        latlong['BB'] = {'latitude':13.1667, 'longitude':-59.5333};
+        latlong['BD'] = {'latitude':24, 'longitude':90};
+        latlong['BE'] = {'latitude':50.8333, 'longitude':4};
+        latlong['BF'] = {'latitude':13, 'longitude':-2};
+        latlong['BG'] = {'latitude':43, 'longitude':25};
+        latlong['BH'] = {'latitude':26, 'longitude':50.55};
+        latlong['BI'] = {'latitude':-3.5, 'longitude':30};
+        latlong['BJ'] = {'latitude':9.5, 'longitude':2.25};
+        latlong['BM'] = {'latitude':32.3333, 'longitude':-64.75};
+        latlong['BN'] = {'latitude':4.5, 'longitude':114.6667};
+        latlong['BO'] = {'latitude':-17, 'longitude':-65};
+        latlong['BR'] = {'latitude':-10, 'longitude':-55};
+        latlong['BS'] = {'latitude':24.25, 'longitude':-76};
+        latlong['BT'] = {'latitude':27.5, 'longitude':90.5};
+        latlong['BV'] = {'latitude':-54.4333, 'longitude':3.4};
+        latlong['BW'] = {'latitude':-22, 'longitude':24};
+        latlong['BY'] = {'latitude':53, 'longitude':28};
+        latlong['BZ'] = {'latitude':17.25, 'longitude':-88.75};
+        latlong['CA'] = {'latitude':54, 'longitude':-100};
+        latlong['CC'] = {'latitude':-12.5, 'longitude':96.8333};
+        latlong['CD'] = {'latitude':0, 'longitude':25};
+        latlong['CF'] = {'latitude':7, 'longitude':21};
+        latlong['CG'] = {'latitude':-1, 'longitude':15};
+        latlong['CH'] = {'latitude':47, 'longitude':8};
+        latlong['CI'] = {'latitude':8, 'longitude':-5};
+        latlong['CK'] = {'latitude':-21.2333, 'longitude':-159.7667};
+        latlong['CL'] = {'latitude':-30, 'longitude':-71};
+        latlong['CM'] = {'latitude':6, 'longitude':12};
+        latlong['CN'] = {'latitude':35, 'longitude':105};
+        latlong['CO'] = {'latitude':4, 'longitude':-72};
+        latlong['CR'] = {'latitude':10, 'longitude':-84};
+        latlong['CU'] = {'latitude':21.5, 'longitude':-80};
+        latlong['CV'] = {'latitude':16, 'longitude':-24};
+        latlong['CX'] = {'latitude':-10.5, 'longitude':105.6667};
+        latlong['CY'] = {'latitude':35, 'longitude':33};
+        latlong['CZ'] = {'latitude':49.75, 'longitude':15.5};
+        latlong['DE'] = {'latitude':51, 'longitude':9};
+        latlong['DJ'] = {'latitude':11.5, 'longitude':43};
+        latlong['DK'] = {'latitude':56, 'longitude':10};
+        latlong['DM'] = {'latitude':15.4167, 'longitude':-61.3333};
+        latlong['DO'] = {'latitude':19, 'longitude':-70.6667};
+        latlong['DZ'] = {'latitude':28, 'longitude':3};
+        latlong['EC'] = {'latitude':-2, 'longitude':-77.5};
+        latlong['EE'] = {'latitude':59, 'longitude':26};
+        latlong['EG'] = {'latitude':27, 'longitude':30};
+        latlong['EH'] = {'latitude':24.5, 'longitude':-13};
+        latlong['ER'] = {'latitude':15, 'longitude':39};
+        latlong['ES'] = {'latitude':40, 'longitude':-4};
+        latlong['ET'] = {'latitude':8, 'longitude':38};
+        latlong['EU'] = {'latitude':47, 'longitude':8};
+        latlong['FI'] = {'latitude':62, 'longitude':26};
+        latlong['FJ'] = {'latitude':-18, 'longitude':175};
+        latlong['FK'] = {'latitude':-51.75, 'longitude':-59};
+        latlong['FM'] = {'latitude':6.9167, 'longitude':158.25};
+        latlong['FO'] = {'latitude':62, 'longitude':-7};
+        latlong['FR'] = {'latitude':46, 'longitude':2};
+        latlong['GA'] = {'latitude':-1, 'longitude':11.75};
+        latlong['GB'] = {'latitude':54, 'longitude':-2};
+        latlong['GD'] = {'latitude':12.1167, 'longitude':-61.6667};
+        latlong['GE'] = {'latitude':42, 'longitude':43.5};
+        latlong['GF'] = {'latitude':4, 'longitude':-53};
+        latlong['GH'] = {'latitude':8, 'longitude':-2};
+        latlong['GI'] = {'latitude':36.1833, 'longitude':-5.3667};
+        latlong['GL'] = {'latitude':72, 'longitude':-40};
+        latlong['GM'] = {'latitude':13.4667, 'longitude':-16.5667};
+        latlong['GN'] = {'latitude':11, 'longitude':-10};
+        latlong['GP'] = {'latitude':16.25, 'longitude':-61.5833};
+        latlong['GQ'] = {'latitude':2, 'longitude':10};
+        latlong['GR'] = {'latitude':39, 'longitude':22};
+        latlong['GS'] = {'latitude':-54.5, 'longitude':-37};
+        latlong['GT'] = {'latitude':15.5, 'longitude':-90.25};
+        latlong['GU'] = {'latitude':13.4667, 'longitude':144.7833};
+        latlong['GW'] = {'latitude':12, 'longitude':-15};
+        latlong['GY'] = {'latitude':5, 'longitude':-59};
+        latlong['HK'] = {'latitude':22.25, 'longitude':114.1667};
+        latlong['HM'] = {'latitude':-53.1, 'longitude':72.5167};
+        latlong['HN'] = {'latitude':15, 'longitude':-86.5};
+        latlong['HR'] = {'latitude':45.1667, 'longitude':15.5};
+        latlong['HT'] = {'latitude':19, 'longitude':-72.4167};
+        latlong['HU'] = {'latitude':47, 'longitude':20};
+        latlong['ID'] = {'latitude':-5, 'longitude':120};
+        latlong['IE'] = {'latitude':53, 'longitude':-8};
+        latlong['IL'] = {'latitude':31.5, 'longitude':34.75};
+        latlong['IN'] = {'latitude':20, 'longitude':77};
+        latlong['IO'] = {'latitude':-6, 'longitude':71.5};
+        latlong['IQ'] = {'latitude':33, 'longitude':44};
+        latlong['IR'] = {'latitude':32, 'longitude':53};
+        latlong['IS'] = {'latitude':65, 'longitude':-18};
+        latlong['IT'] = {'latitude':42.8333, 'longitude':12.8333};
+        latlong['JM'] = {'latitude':18.25, 'longitude':-77.5};
+        latlong['JO'] = {'latitude':31, 'longitude':36};
+        latlong['JP'] = {'latitude':36, 'longitude':138};
+        latlong['KE'] = {'latitude':1, 'longitude':38};
+        latlong['KG'] = {'latitude':41, 'longitude':75};
+        latlong['KH'] = {'latitude':13, 'longitude':105};
+        latlong['KI'] = {'latitude':1.4167, 'longitude':173};
+        latlong['KM'] = {'latitude':-12.1667, 'longitude':44.25};
+        latlong['KN'] = {'latitude':17.3333, 'longitude':-62.75};
+        latlong['KP'] = {'latitude':40, 'longitude':127};
+        latlong['KR'] = {'latitude':37, 'longitude':127.5};
+        latlong['KW'] = {'latitude':29.3375, 'longitude':47.6581};
+        latlong['KY'] = {'latitude':19.5, 'longitude':-80.5};
+        latlong['KZ'] = {'latitude':48.1, 'longitude':68.1};
+        latlong['LA'] = {'latitude':18, 'longitude':105};
+        latlong['LB'] = {'latitude':33.8333, 'longitude':35.8333};
+        latlong['LC'] = {'latitude':13.8833, 'longitude':-61.1333};
+        latlong['LI'] = {'latitude':47.1667, 'longitude':9.5333};
+        latlong['LK'] = {'latitude':7, 'longitude':81};
+        latlong['LR'] = {'latitude':6.5, 'longitude':-9.5};
+        latlong['LS'] = {'latitude':-29.5, 'longitude':28.5};
+        latlong['LT'] = {'latitude':55, 'longitude':24};
+        latlong['LU'] = {'latitude':49.75, 'longitude':6};
+        latlong['LV'] = {'latitude':57, 'longitude':25};
+        latlong['LY'] = {'latitude':25, 'longitude':17};
+        latlong['MA'] = {'latitude':32, 'longitude':-5};
+        latlong['MC'] = {'latitude':43.7333, 'longitude':7.4};
+        latlong['MD'] = {'latitude':47, 'longitude':29};
+        latlong['ME'] = {'latitude':42.5, 'longitude':19.4};
+        latlong['MG'] = {'latitude':-20, 'longitude':47};
+        latlong['MH'] = {'latitude':9, 'longitude':168};
+        latlong['MK'] = {'latitude':41.8333, 'longitude':22};
+        latlong['ML'] = {'latitude':17, 'longitude':-4};
+        latlong['MM'] = {'latitude':22, 'longitude':98};
+        latlong['MN'] = {'latitude':46, 'longitude':105};
+        latlong['MO'] = {'latitude':22.1667, 'longitude':113.55};
+        latlong['MP'] = {'latitude':15.2, 'longitude':145.75};
+        latlong['MQ'] = {'latitude':14.6667, 'longitude':-61};
+        latlong['MR'] = {'latitude':20, 'longitude':-12};
+        latlong['MS'] = {'latitude':16.75, 'longitude':-62.2};
+        latlong['MT'] = {'latitude':35.8333, 'longitude':14.5833};
+        latlong['MU'] = {'latitude':-20.2833, 'longitude':57.55};
+        latlong['MV'] = {'latitude':3.25, 'longitude':73};
+        latlong['MW'] = {'latitude':-13.5, 'longitude':34};
+        latlong['MX'] = {'latitude':23, 'longitude':-102};
+        latlong['MY'] = {'latitude':2.5, 'longitude':112.5};
+        latlong['MZ'] = {'latitude':-18.25, 'longitude':35};
+        latlong['NA'] = {'latitude':-22, 'longitude':17};
+        latlong['NC'] = {'latitude':-21.5, 'longitude':165.5};
+        latlong['NE'] = {'latitude':16, 'longitude':8};
+        latlong['NF'] = {'latitude':-29.0333, 'longitude':167.95};
+        latlong['NG'] = {'latitude':10, 'longitude':8};
+        latlong['NI'] = {'latitude':13, 'longitude':-85};
+        latlong['NL'] = {'latitude':52.5, 'longitude':5.75};
+        latlong['NO'] = {'latitude':62, 'longitude':10};
+        latlong['NP'] = {'latitude':28, 'longitude':84};
+        latlong['NR'] = {'latitude':-0.5333, 'longitude':166.9167};
+        latlong['NU'] = {'latitude':-19.0333, 'longitude':-169.8667};
+        latlong['NZ'] = {'latitude':-41, 'longitude':174};
+        latlong['OM'] = {'latitude':21, 'longitude':57};
+        latlong['PA'] = {'latitude':9, 'longitude':-80};
+        latlong['PE'] = {'latitude':-10, 'longitude':-76};
+        latlong['PF'] = {'latitude':-15, 'longitude':-140};
+        latlong['PG'] = {'latitude':-6, 'longitude':147};
+        latlong['PH'] = {'latitude':13, 'longitude':122};
+        latlong['PK'] = {'latitude':30, 'longitude':70};
+        latlong['PL'] = {'latitude':52, 'longitude':20};
+        latlong['PM'] = {'latitude':46.8333, 'longitude':-56.3333};
+        latlong['PR'] = {'latitude':18.25, 'longitude':-66.5};
+        latlong['PS'] = {'latitude':32, 'longitude':35.25};
+        latlong['PT'] = {'latitude':39.5, 'longitude':-8};
+        latlong['PW'] = {'latitude':7.5, 'longitude':134.5};
+        latlong['PY'] = {'latitude':-23, 'longitude':-58};
+        latlong['QA'] = {'latitude':25.5, 'longitude':51.25};
+        latlong['RE'] = {'latitude':-21.1, 'longitude':55.6};
+        latlong['RO'] = {'latitude':46, 'longitude':25};
+        latlong['RS'] = {'latitude':44, 'longitude':21};
+        latlong['RU'] = {'latitude':60, 'longitude':100};
+        latlong['RW'] = {'latitude':-2, 'longitude':30};
+        latlong['SA'] = {'latitude':25, 'longitude':45};
+        latlong['SB'] = {'latitude':-8, 'longitude':159};
+        latlong['SC'] = {'latitude':-4.5833, 'longitude':55.6667};
+        latlong['SD'] = {'latitude':15, 'longitude':30};
+        latlong['SE'] = {'latitude':62, 'longitude':15};
+        latlong['SG'] = {'latitude':1.3667, 'longitude':103.8};
+        latlong['SH'] = {'latitude':-15.9333, 'longitude':-5.7};
+        latlong['SI'] = {'latitude':46, 'longitude':15};
+        latlong['SJ'] = {'latitude':78, 'longitude':20};
+        latlong['SK'] = {'latitude':48.6667, 'longitude':19.5};
+        latlong['SL'] = {'latitude':8.5, 'longitude':-11.5};
+        latlong['SM'] = {'latitude':43.7667, 'longitude':12.4167};
+        latlong['SN'] = {'latitude':14, 'longitude':-14};
+        latlong['SO'] = {'latitude':10, 'longitude':49};
+        latlong['SR'] = {'latitude':4, 'longitude':-56};
+        latlong['ST'] = {'latitude':1, 'longitude':7};
+        latlong['SV'] = {'latitude':13.8333, 'longitude':-88.9167};
+        latlong['SY'] = {'latitude':35, 'longitude':38};
+        latlong['SZ'] = {'latitude':-26.5, 'longitude':31.5};
+        latlong['TC'] = {'latitude':21.75, 'longitude':-71.5833};
+        latlong['TD'] = {'latitude':15, 'longitude':19};
+        latlong['TF'] = {'latitude':-43, 'longitude':67};
+        latlong['TG'] = {'latitude':8, 'longitude':1.1667};
+        latlong['TH'] = {'latitude':15, 'longitude':100};
+        latlong['TJ'] = {'latitude':39, 'longitude':71};
+        latlong['TK'] = {'latitude':-9, 'longitude':-172};
+        latlong['TL'] = {'latitude':-8, 'longitude':125};
+        latlong['TM'] = {'latitude':40, 'longitude':60};
+        latlong['TN'] = {'latitude':34, 'longitude':9};
+        latlong['TO'] = {'latitude':-20, 'longitude':-175};
+        latlong['TR'] = {'latitude':39, 'longitude':35};
+        latlong['TT'] = {'latitude':11, 'longitude':-61};
+        latlong['TV'] = {'latitude':-8, 'longitude':178};
+        latlong['TW'] = {'latitude':23.5, 'longitude':121};
+        latlong['TZ'] = {'latitude':-6, 'longitude':35};
+        latlong['UA'] = {'latitude':49, 'longitude':32};
+        latlong['UG'] = {'latitude':1, 'longitude':32};
+        latlong['UM'] = {'latitude':19.2833, 'longitude':166.6};
+        latlong['US'] = {'latitude':38, 'longitude':-97};
+        latlong['UY'] = {'latitude':-33, 'longitude':-56};
+        latlong['UZ'] = {'latitude':41, 'longitude':64};
+        latlong['VA'] = {'latitude':41.9, 'longitude':12.45};
+        latlong['VC'] = {'latitude':13.25, 'longitude':-61.2};
+        latlong['VE'] = {'latitude':8, 'longitude':-66};
+        latlong['VG'] = {'latitude':18.5, 'longitude':-64.5};
+        latlong['VI'] = {'latitude':18.3333, 'longitude':-64.8333};
+        latlong['VN'] = {'latitude':16, 'longitude':106};
+        latlong['VU'] = {'latitude':-16, 'longitude':167};
+        latlong['WF'] = {'latitude':-13.3, 'longitude':-176.2};
+        latlong['WS'] = {'latitude':-13.5833, 'longitude':-172.3333};
+        latlong['YE'] = {'latitude':15, 'longitude':48};
+        latlong['YT'] = {'latitude':-12.8333, 'longitude':45.1667};
+        latlong['ZA'] = {'latitude':-29, 'longitude':24};
+        latlong['ZM'] = {'latitude':-15, 'longitude':30};
+        latlong['ZW'] = {'latitude':-20, 'longitude':30};
+        var mapData = [
+          { cname:"尼日尔", name:"Niger", value:"857.96", code:"NE" },
+          { cname:"中非共和国", name:"Central African Republic", value:"203.88", code:"CF" },
+          { cname:"查德", name:"Chad", value:"664.22", code:"TD" },
+          { cname:"孟加拉国", name:"Bangladesh", value:"14992.82", code:"BD" },
+          { cname:"马里", name:"Mali", value:"755.54", code:"ML" },
+          { cname:"莫桑比克", name:"Mozambique", value:"1723.59", code:"MZ" },
+          { cname:"布基纳法索", name:"Burkina Faso", value:"767.21", code:"BF" },
+          { cname:"南苏丹", name:"South Sudan", value:"543.02", code:"SD" },
+          { cname:"几内亚", name:"Guinea", value:"578.93", code:"GN" },
+          { cname:"索马里", name:"Somalia", value:"647.26", code:"SO" },
+          { cname:"尼日利亚", name:"Nigeria", value:"6785.51", code:"NG" },
+          { cname:"马拉维", name:"Malawi", value:"782.20", code:"MW" },
+          { cname:"厄立特里亚", name:"Eritrea", value:"309.76", code:"ER" },
+          { cname:"埃塞俄比亚", name:"Ethiopia", value:"8257.52", code:"ET" },
+          { cname:"马达加斯加", name:"Madagascar", value:"1120.23", code:"MG" },
+          { cname:"尼泊尔", name:"Nepal", value:"2021.92", code:"NP" },
+          { cname:"刚果民主共和国", name:"Democratic Republic of the Congo", value:"230.24", code:"CD" },
+          { cname:"毛里塔尼亚", name:"Mauritania", value:"251.38", code:"MR" },
+          { cname:"苏里南", name:"Suriname", value:"117.35", code:"SR" },
+          { cname:"多米尼加共和国", name:"Dominican Republic", value:"1807.73", code:"DO" },
+          { cname:"利比里亚", name:"Liberia", value:"234.63", code:"LR" },
+          { cname:"尼加拉瓜", name:"Nicaragua", value:"149.02", code:"NI" },
+          { cname:"苏丹", name:"Sudan", value:"2583.94", code:"SD" },
+          { cname:"乌干达", name:"Uganda", value:"1286.36", code:"UG" },
+          { cname:"津巴布韦", name:"Zimbabwe", value:"767.57", code:"ZW" },
+          { cname:"洪都拉斯", name:"Honduras", value:"1412.56", code:"HN" },
+          { cname:"老挝人民民主共和国", name:"Lao People's Democratic Republic", value:"457.85", code:"LA" },
+          { cname:"也门", name:"Yemen", value:"1405.28", code:"YE" },
+          { cname:"科摩罗", name:"Comoros", value:"46.43", code:"KM" },
+          { cname:"喀麦隆", name:"Cameroon", value:"1156.52", code:"CM" },
+          { cname:"贝宁", name:"Benin", value:"715.09", code:"BJ" },
+          { cname:"坦桑尼亚联合共和国", name:"United Republic of Tanzania", value:"2047.96", code:"TZ" },
+          { cname:"安哥拉", name:"Angola", value:"1198.22", code:"AO" },
+          { cname:"圭亚那", name:"Guyana", value:"22.84", code:"GY" },
+          { cname:"塞拉利昂", name:"Sierra Leone", value:"373.07", code:"SL" },
+          { cname:"赤道几内亚", name:"Equatorial Guinea", value:"55.48", code:"GQ" },
+          { cname:"危地马拉", name:"Guatemala", value:"1956.81", code:"GT" },
+          { cname:"赞比亚", name:"Zambia", value:"589.68", code:"ZM" },
+          { cname:"塞内加尔", name:"Senegal", value:"878.58", code:"SN" },
+          { cname:"阿富汗", name:"Afghanistan", value:"1764.86", code:"AF" },
+          { cname:"伊拉克", name:"Iraq", value:"2429.16", code:"IQ" },
+          { cname:"印度", name:"India", value:"126592.95", code:"IN" },
+          { cname:"巴布亚新几内亚", name:"Papua New Guinea", value:"342.93", code:"PG" },
+          { cname:"巴拿马", name:"Panama", value:"296.28", code:"PA" },
+          { cname:"墨西哥", name:"Mexico", value:"3446.65", code:"MX" },
+          { cname:"古巴", name:"Cuba", value:"5841.38", code:"CU" },
+          { cname:"不丹", name:"Bhutan", value:"104.53", code:"BT" },
+          { cname:"冈比亚", name:"Gambia", value:"88.95", code:"GM" },
+          { cname:"萨尔瓦多", name:"El Salvador", value:"319.87", code:"SV" },
+          { cname:"多哥", name:"Togo", value:"328.41", code:"TG" },
+          { cname:"乌拉圭", name:"Uruguay", value:"1898.57", code:"UY" },
+          { cname:"几内亚比绍", name:"Guinea-Bissau", value:"68.94", code:"GW" },
+          { cname:"哥伦比亚", name:"Colombia", value:"2157.12", code:"CO" },
+          { cname:"肯尼亚", name:"Kenya", value:"1827.03", code:"KE" },
+          { cname:"泰国", name:"Thailand", value:"22851.05", code:"TH" },
+          { cname:"加蓬", name:"Gabon", value:"151.50", code:"GA" },
+          { cname:"巴拉圭", name:"Paraguay", value:"143.88", code:"PY" },
+          { cname:"所罗门群岛", name:"Solomon Islands", value:"31.83", code:"SB" },
+          { cname:"哥斯达黎加", name:"Costa Rica", value:"818.24", code:"CR" },
+          { cname:"加纳", name:"Ghana", value:"1293.90", code:"GH" },
+          { cname:"厄瓜多尔", name:"Ecuador", value:"2564.82", code:"EC" },
+          { cname:"玻利维亚(多民族国)", name:"Bolivia (Plurinational State of)", value:"2479.39", code:"BO" },
+          { cname:"布隆迪", name:"Burundi", value:"426.17", code:"BI" },
+          { cname:"柬埔寨", name:"Cambodia", value:"1361.94", code:"KH" },
+          { cname:"巴基斯坦", name:"Pakistan", value:"15215.65", code:"PK" },
+          { cname:"佛得角", name:"Cabo Verde", value:"67.60", code:"CV" },
+          { cname:"埃及", name:"Egypt", value:"6974.90", code:"EG" },
+          { cname:"秘鲁", name:"Peru", value:"5811.35", code:"PE" },
+          { cname:"伊朗伊斯兰共和国", name:"Iran (Islamic Republic of)", value:"11046.32", code:"IR" },
+          { cname:"菲律宾", name:"Philippines", value:"2010.25", code:"PH" },
+          { cname:"莱索托", name:"Lesotho", value:"194.21", code:"LS" },
+          { cname:"印度尼西亚", name:"Indonesia", value:"27053.73", code:"ID" },
+          { cname:"缅甸", name:"Myanmar", value:"5082.36", code:"MM" },
+          { cname:"海地", name:"Haiti", value:"954.88", code:"HT" },
+          { cname:"土耳其", name:"Turkey", value:"17307.88", code:"TR" },
+          { cname:"乔治亚州", name:"Georgia", value:"1826.33", code:"GE" },
+          { cname:"摩洛哥", name:"Morocco", value:"4967.12", code:"MA" },
+          { cname:"吉尔吉斯斯坦", name:"Kyrgyzstan", value:"534.63", code:"KG" },
+          { cname:"摩尔多瓦共和国", name:"Republic of Moldova", value:"163.14", code:"MD" },
+          { cname:"蒙古", name:"Mongolia", value:"243.01", code:"MN" },
+          { cname:"阿尔巴尼亚", name:"Albania", value:"1827.08", code:"AL" },
+          { cname:"千里达及托巴哥", name:"Trinidad and Tobago", value:"214.81", code:"TT" },
+          { cname:"阿塞拜疆", name:"Azerbaijan", value:"1370.12", code:"AZ" },
+          { cname:"斯里兰卡", name:"Sri Lank", value:"6938.60", code:"LK" },
+          { cname:"Jordan约旦", name:"Jordan", value:"706.36", code:"JO" },
+          { cname:"乌克兰", name:"Ukraine", value:"14195.98", code:"UA" },
+          { cname:"塔吉克斯坦", name:"Tajikistan", value:"517.68", code:"TJ" },
+          { cname:"牙买加", name:"Jamaica", value:"587.29", code:"JM" },
+          { cname:"乌兹别克斯坦", name:"Uzbekistan", value:"1453.58", code:"UZ" },
+          { cname:"哈萨克斯坦", name:"Kazakhstan", value:"2404.15", code:"KZ" },
+          { cname:"北马其顿", name:"North Macedonia", value:"70.85", code:"MK" },
+          { cname:"纳米比亚", name:"Namibia", value:"175.62", code:"NA" },
+          { cname:"卢旺达", name:"Rwanda", value:"657.31", code:"RW" },
+          { cname:"黎巴嫩", name:"Lebanon", value:"1213.33", code:"LB" },
+          { cname:"黑山", name:"Montenegro", value:"226.64", code:"ME" },
+          { cname:"土库曼斯坦", name:"Turkmenistan", value:"440.76", code:"TM" },
+          { cname:"吉布提", name:"Djibouti", value:"90.22", code:"DJ" },
+          { cname:"亚美尼亚", name:"Armenia", value:"39.87", code:"AM" },
+          { cname:"白俄罗斯", name:"Belarus", value:"3530.36", code:"BY" },
+          { cname:"卡塔尔", name:"Qatar", value:"74.82", code:"QA" },
+          { cname:"阿曼", name:"Oman", value:"323.29", code:"OM" },
+          { cname:"南非", name:"South Africa", value:"4676.04", code:"ZA" },
+          { cname:"波斯尼亚和黑塞哥维那", name:"Bosnia and Herzegovina", value:"1143.50", code:"BA" },
+          { cname:"塞尔维亚", name:"Serbia", value:"2875.76", code:"RS" },
+          { cname:"阿尔及利亚", name:"Algeria", value:"5634.86", code:"DZ" },
+          { cname:"突尼斯", name:"Tunisia", value:"2507.35", code:"TN" },
+          { cname:"新加坡", name:"Singapore", value:"32.43", code:"SG" },
+          { cname:"朝鲜人民民主共和国", name:"Democratic People's Republic of Korea", value:"4547.53", code:"KP" },
+          { cname:"中华人民共和国", name:"China", value:"304454.79", code:"CN" },
+          { cname:"美国", name:"United States of America", value:"287198.41", code:"US" },
+          { cname:"英国", name:"United Kingdom", value:"98134.75", code:"GB" },
+          { cname:"日本", name:"Japan", value:"56937.11", code:"JP" },
+          { cname:"法国", name:"France", value:"53157.44", code:"FR" },
+          { cname:"德国", name:"Germany", value:"51168.11", code:"DE" },
+          { cname:"俄罗斯", name:"Russian Federation", value:"48521.64", code:"RU" },
+          { cname:"西班牙", name:"Spain", value:"42338.50", code:"ES" },
+          { cname:"意大利", name:"Italy", value:"41444.61", code:"IT" },
+          { cname:"加拿大", name:"Canada", value:"30969.60", code:"CA" },
+          { cname:"巴西", name:"Brazil", value:"30716.54", code:"BR" },
+          { cname:"新西兰", name:"New Zealand", value:"3031.68", code:"NZ" },
+          { cname:"越南", name:"Viet Nam", value:"29306.90", code:"VN" },
+          { cname:"荷兰", name:"Netherlands", value:"18148.25", code:"NL" },
+          { cname:"荷兰", name:"Netherlands", value:"18148.25", code:"NL" },
+          { cname:"澳大利亚", name:"Australia", value:"15588.50", code:"AU" },
+          { cname:"芬兰", name:"Finland", value:"11120.25", code:"FI" },
+          { cname:"瑞典", name:"Sweden", value:"10916.86", code:"SE" },
+          { cname:"比利时", name:"Belgium", value:"9415.98", code:"BE" },
+          { cname:"瑞士", name:"Switzerland", value:"7192.25", code:"CH" },
+          { cname:"以色列", name:"Israel", value:"2995.50", code:"IL" },
+          { cname:"罗马尼亚", name:"Romania", value:"2839.08", code:"RO" },
+          { cname:"沙特阿拉伯", name:"Saudi Arabia", value:"2442.10", code:"SA" },
+          { cname:"叙利亚阿拉伯共和国", name:"Syrian Arab Republic", value:"1550.73", code:"SY" },
+          { cname:"克罗地亚", name:"Croatia", value:"1066.35", code:"HR" },
+          { cname:"科特迪瓦", name:"Côte d'Ivoire", value:"1026.34", code:"CI" },
+          { cname:"利比亚", name:"Libya", value:"742.93", code:"LY" },
+          { cname:"拉脱维亚", name:"Latvia", value:"663.60", code:"LV" },
+          { cname:"立陶宛", name:"Lithuania", value:"648.94", code:"LT" },
+          { cname:"委内瑞拉", name:"Venezuela (Bolivarian Republic of)", value:"572.03", code:"VE" },
+          { cname:"塞浦路斯", name:"Cyprus", value:"399.91", code:"CY" },
+          { cname:"斯洛文尼亚", name:"Slovenia", value:"375.44", code:"SI" },
+          { cname:"卢森堡", name:"Luxembourg", value:"297.92", code:"LU" },
+          { cname:"冰岛", name:"Iceland", value:"295.46", code:"IS" },
+          { cname:"爱沙尼亚", name:"Estonia", value:"229.43", code:"EE" },
+          { cname:"马其他", name:"Malta", value:"207.22", code:"MT" },
+          { cname:"阿拉伯联合酋长国", name:"United Arab Emirates", value:"194.24", code:"AE" },
+          { cname:"博茨瓦纳", name:"Botswana", value:"163.69", code:"BW" },
+          { cname:"保加利亚", name:"Bulgaria", value:"147.41", code:"BG" },
+          { cname:"科威特", name:"Kuwait", value:"139.45", code:"KW" },
+          { cname:"巴巴多斯", name:"Barbados", value:"114.08", code:"BR" },
+          { cname:"巴林", name:"Bahrain", value:"96.14", code:"BH" },
+          { cname:"东帝汶", name:"Timor-Leste", value:"84.18", code:"TL" },
+          { cname:"斯威士兰", name:"Eswatini", value:"76.56", code:"SZ" },
+          { cname:"文莱", name:"Brunei Darussalam", value:"73.04", code:"BN" },
+          { cname:"斐济", name:"Fiji", value:"62.88", code:"FJ" },
+          { cname:"巴哈马", name:"Bahamas", value:"53.42", code:"BS" },
+          { cname:"圣卢西亚", name:"Saint Lucia", value:"47.58", code:"LC" },
+          { cname:"马尔代夫", name:"Maldives", value:"47.23", code:"MV" },
+          { cname:"伯利兹", name:"Belize", value:"44.77", code:"BZ" },
+          { cname:"毛里求斯", name:"Mauritius", value:"41.80", code:"MU" },
+          { cname:"萨摩亚", name:"Samoa", value:"18.94", code:"WS" },
+          { cname:"塞舌尔", name:"Seychelles", value:"18.72", code:"SC" },
+          { cname:"瓦努阿图", name:"Vanuatu", value:"17.60", code:"VU" },
+          { cname:"汤加", name:"Tonga", value:"13.30", code:"TO" },
+          { cname:"圣多美和普林西比", name:"Sao Tome and Principe", value:"12.06", code:"ST" },
+          { cname:"基里巴斯", name:"Kiribati", value:"10.92", code:"KI" },
+          { cname:"格拉纳达", name:"Grenada", value:"10.38", code:"GD" },
+          { cname:"安提瓜和巴布达", name:"Antigua and Barbuda", value:"6.62", code:"AG" },
+          { cname:"密克罗尼西亚联邦", name:"Micronesia (Federated States of)", value:"6.52", code:"FM" },
+          { cname:"圣文森特和格林纳丁斯", name:"Saint Vincent and the Grenadines", value:"1.99", code:"VC" },
+          { cname:"葡萄牙", name:"Portugal", value:"7190.98", code:"PT" },
+          { cname:"丹麦", name:"Denmark", value:"5217.55", code:"DK" },
+          { cname:"匈牙利", name:"Hungary", value:"4595.25", code:"HU" },
+          { cname:"斯洛伐克", name:"Slovakia", value:"4481.95", code:"SK" },
+          { cname:"挪威", name:"Norway", value:"4464.25", code:"NO" },
+          { cname:"韩国", name:"Republic of Korea", value:"12144.95", code:"KR" },
+          { cname:"奥地利", name:"Austria", value:"4174.26", code:"AT" },
+          { cname:"智利", name:"Chile", value:"3999.87", code:"CL" },
+          { cname:"马来西亚", name:"Malaysia", value:"3996.21", code:"MY" },
+          { cname:"捷克", name:"Czechia", value:"3958.00", code:"CZ" },
+          { cname:"希腊", name:"Greece", value:"3939.61", code:"GR" },
+          { cname:"阿根廷", name:"Argentina", value:"3737.15", code:"AR" },
+          { cname:"波兰", name:"Poland", value:"3701.28", code:"PL" },
+          { cname:"爱尔兰岛", name:"Ireland", value:"3209.21", code:"IE" },
+
+
+
+
+        ]
+        var chart = echarts.init(document.getElementById('main'), null, {});
+
+        chart.setOption({
+          backgroundColor: '#222222',
+          title: {
+            //   text: '2019年全球阿尔兹海默病死亡人数',
+            //   subtext: 'Global deaths of Alzheimer in 2019',
+            left: 'center',
+            top: 20,
+            textStyle: {
+              color: 'white'
+            }
+          },
+          tooltip: {
+            show : true,
+            trigger: 'item',
+            formatter: function (params) {
+              var value = params.data;
+              console.log(value);
+              return '国家： ' + value['name'] + '<br>'
+                      + '国家(cn)： ' + value['cname'] + '<br>'
+                      + '死亡人数:   ' + value['value'][2] + '<br>';
+            }
+          },
+          visualMap: {
+            min: 0,
+            max: 350000,
+            type: 'piecewise',
+            pieces: [
+              {min: 300000, label: '>30万',color:'#842B00'},
+              {min: 200000, max: 299999.99, label: '20~29万', color:'#A0522D'},
+              {min: 100000, max: 199999.99, label: '10~19万', color:'#CD853F'},
+              {min: 10000, max: 99999.99, label: '1万~9万', color:'#FFC78E'},
+              {min: 0, max: 9999.99, label: '1万以下', color:'#DEB887'},
+              {value: 0, label: '无数据', color: '#222222'},
+            ],
+            textStyle: {
+              color: 'white'
+            },
+            inRange: {
+              symbolSize: [-10, 60]
+            },
+            bottom: 15 // 组件离容器下侧的距离
+          },
+
+          geo: {
+            name: '世界各国阿尔兹海默病死亡人数统计',
+            type: 'map',
+            map: 'world',
+            roam: true,
+            label: {
+              emphasis: {
+                show: true
+              }
+            },
+            itemStyle: {
+              normal: {
+                areaColor: '#393948',
+                borderColor: '#111'
+              },
+              emphasis: {
+                areaColor: '#393948'
+              }
+            },
+            regions: [      //对不同的区块进行着色
+              {
+                name: '九段线', //区块名称
+                itemStyle: {
+                  normal: {
+                    areaColor: '#111',
+                    borderColor: '#111'
+
+                  }
+                }
+              }],
+          },
+          series : [
+            {
+              type: 'scatter',
+              coordinateSystem: 'geo',
+              data: mapData.map(function (itemOpt) {
+                return {
+                  name: itemOpt.name,
+                  cname: itemOpt.cname,
+                  value: [
+                    latlong[itemOpt.code].longitude,
+                    latlong[itemOpt.code].latitude,
+                    itemOpt.value
+                  ],
+                  label: {
+                    emphasis: {
+                      show: false
+                    }
+                  },
+                  // itemStyle: {
+                  //     normal: {
+                  //         color: itemOpt.color
+                  //     }
+                  // }
+                };
+              })
+            }
+          ]
+        });
+      </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>
